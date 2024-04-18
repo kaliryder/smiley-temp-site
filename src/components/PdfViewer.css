@@ -1,0 +1,48 @@
+/* PdfViewer.module.css */
+@font-face {
+  font-family: 'Upheaval TT';
+  src: url('../fonts/upheavtt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Adjust this value as needed */
+    /*max-width: 100%;*/
+      width: 100%; /* Ensures the container takes up the full width of the screen */
+      max-width: 600px; /* Optional: set a max-width for larger screens */
+      margin: auto;
+      position: relative; /* For absolute positioning of child elements */    
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjust this value as needed */
+  }
+  
+  button {
+    font-family: 'Upheaval TT', sans-serif;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 15px; /* Size of the buttons */
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10%;
+    font-size: 0.8 rem; /* Responsive font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+
+  .annotation-layer {
+    display: none !important;
+    height: 0px;
+  }
+
+  .react-pdf__Page__annotations.annotationLayer {
+    display: none !important;
+  }
+  

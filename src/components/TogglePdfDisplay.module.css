@@ -1,0 +1,49 @@
+/* TogglePdfDisplay.module.css */
+
+@font-face {
+    font-family: 'Upheaval TT';
+    src: url('../fonts/upheavtt.ttf') format('truetype');
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .buttons {
+    margin-bottom: 20px; /* Space between buttons and the PDF viewer */
+  }
+  
+  .button {
+    font-family: 'Upheaval TT', sans-serif;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px; /* Size of the buttons */
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10%;
+    font-size: 1.2rem; /* Responsive font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .pdfContainer {
+    width: 90%; /* Responsive width */
+    max-width: 800px; /* Maximum width */
+  }
+  
+  @media (max-width: 768px) {
+    .button {
+      font-size: 1rem; /* Smaller font size on mobile */
+      padding: 8px 16px; /* Smaller buttons on mobile */
+    }
+  }
+  
